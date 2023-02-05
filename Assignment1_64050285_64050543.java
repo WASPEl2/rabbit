@@ -22,8 +22,37 @@ public class Assignment1_64050285_64050543 extends JPanel {
         Graphics2D g2 = bf.createGraphics();
         g2.setColor(Color.decode("#b4c076"));
         g2.fillRect(0, 0, 600, 600);
-        g2.setColor(Color.WHITE);
+
+        // grass shadow
+        g2.setColor(Color.decode("#6f8230"));
+        bezierCurve(g2, 194, 546, 196, 546, 215, 540, 229, 527);
+        bezierCurve(g2, 229, 527, 263, 498, 238, 460, 274, 446);
+        bezierCurve(g2, 274, 446, 292, 438, 316, 442, 321, 449);
+        bresenhamsLine(g2, 249, 487, 311, 506);
+        bresenhamsLine(g2, 321, 449, 400, 470);
+        bezierCurve(g2, 400, 470, 418, 474, 423, 465, 411, 453);
+        bezierCurve(g2, 311, 506, 322, 507, 327, 500, 315, 490);
+        bezierCurve(g2, 315, 490, 340, 493, 340, 486, 335, 483);
+        bresenhamsLine(g2, 258, 459, 335, 483);
+        bezierCurve(g2, 411, 453, 422, 450, 420, 446, 412, 447);
+        bresenhamsLine(g2, 412, 447, 278, 410);
+        bresenhamsLine(g2, 278, 410, 194, 546);
+        bf = floodfill(bf, 276, 435, Color.decode("#6f8230"));
+        bf = floodfill(bf, 287, 481, Color.decode("#6f8230"));
+        bezierCurve(g2, 61, 424, 59, 430, 65, 433, 71, 434);
+        bezierCurve(g2, 71, 434, 93, 440, 95, 429, 118, 433);
+        bezierCurve(g2, 118, 433, 135, 437, 149, 445, 158, 454);
+        bresenhamsLine(g2, 158, 454, 137, 413);
+        bresenhamsLine(g2, 137, 413, 61, 424);
+        bf = floodfill(bf, 112, 421, Color.decode("#6f8230"));
+        bezierCurve(g2, 335, 327, 373, 343, 440, 311, 418, 188);
+        bezierCurve(g2, 412, 200, 514, 238, 556, 193, 550, 166);
+        bresenhamsLine(g2, 335, 327, 397, 180);
+        bresenhamsLine(g2, 397, 180, 550, 166);
+        bf = floodfill(bf, 415, 188, Color.decode("#6f8230"));
+
         /* lower face line */
+        g2.setColor(Color.WHITE);
         bezierCurve(g2, 188, 160, 163, 177, 150, 213, 159, 242);
         bezierCurve(g2, 159, 242, 183, 322, 302, 365, 371, 321);
         bezierCurve(g2, 371, 321, 404, 306, 429, 235, 422, 196);
