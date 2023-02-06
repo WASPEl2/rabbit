@@ -160,7 +160,7 @@ public class Assignment1_64050285_64050543 extends JPanel {
         bezierCurve(g2, 463, 175, 411, 161, 401, 174, 398, 161);
         bf = floodfill(bf, 418, 161, Color.decode("#fee0d5"));
 
-        // on cheeks
+        // on left cheeks
         g2.setColor(Color.decode("#e8c3b3"));
         bezierCurve(g2, 187, 177, 191, 179, 186, 185, 182, 182);
         bezierCurve(g2, 187, 177, 185, 176, 180, 180, 182, 182);
@@ -170,6 +170,7 @@ public class Assignment1_64050285_64050543 extends JPanel {
         bezierCurve(g2, 192, 182, 195, 184, 192, 191, 188, 188);
         bf = floodfill(bf, 189, 186, Color.decode("#e8c3b3"));
 
+        // on right cheeks
         bezierCurve(g2, 314, 266, 311, 267, 312, 273, 314, 273);
         bezierCurve(g2, 314, 266, 317, 266, 317, 273, 314, 273);
         bf = floodfill(bf, 314, 270, Color.decode("#e8c3b3"));
@@ -227,6 +228,17 @@ public class Assignment1_64050285_64050543 extends JPanel {
         bezierCurve(g2, 192, 156, 187, 153, 212, 121, 213, 133);
         bf = floodfill(bf, 202, 140, Color.decode("#b69b90"));
 
+        bezierCurve(g2, 422, 196, 418, 196, 420, 229, 419, 232);
+        bezierCurve(g2, 407, 272, 408, 260, 419, 239, 419, 232);
+        bezierCurve(g2, 407, 272, 422, 278, 431, 203, 422, 196);
+        bf = floodfill(bf, 414, 260, Color.decode("#b69b90"));
+
+        bezierCurve(g2, 403, 277, 417, 285, 360, 352, 330, 329);
+        bezierCurve(g2, 369, 319, 346, 334, 337, 321, 330, 329);
+        bezierCurve(g2, 403, 277, 397, 278, 388, 306, 369, 319);
+        bf = floodfill(bf, 394, 296, Color.decode("#b69b90"));
+
+        // cut left ear
         bezierCurve(g2, 263, 140, 263, 149, 284, 136, 290, 121);
         bezierCurve(g2, 317, 94, 307, 102, 301, 115, 290, 121);
         bezierCurve(g2, 317, 94, 311, 89, 294, 112, 288, 114);
@@ -263,6 +275,7 @@ public class Assignment1_64050285_64050543 extends JPanel {
         bezierCurve(g2, 314, 68, 315, 65, 305, 60, 303, 63);
         bf = floodfill(bf, 307, 66, Color.decode("#b69b90"));
 
+        // cut right ear
         bezierCurve(g2, 315, 69, 319, 67, 323, 71, 325, 73);
         bezierCurve(g2, 361, 112, 365, 99, 330, 65, 325, 73);
         bezierCurve(g2, 361, 112, 370, 115, 386, 133, 386, 133);
@@ -298,17 +311,7 @@ public class Assignment1_64050285_64050543 extends JPanel {
         bezierCurve(g2, 548, 123, 560, 125, 562, 137, 563, 153);
         bf = floodfill(bf, 558, 165, Color.decode("#b69b90"));
 
-        bezierCurve(g2, 422, 196, 418, 196, 420, 229, 419, 232);
-        bezierCurve(g2, 407, 272, 408, 260, 419, 239, 419, 232);
-        bezierCurve(g2, 407, 272, 422, 278, 431, 203, 422, 196);
-        bf = floodfill(bf, 414, 260, Color.decode("#b69b90"));
-
-        bezierCurve(g2, 403, 277, 417, 285, 360, 352, 330, 329);
-        bezierCurve(g2, 369, 319, 346, 334, 337, 321, 330, 329);
-        bezierCurve(g2, 403, 277, 397, 278, 388, 306, 369, 319);
-        bf = floodfill(bf, 394, 296, Color.decode("#b69b90"));
-
-        // cut body line
+        // cut left foot line
         bezierCurve(g2, 84, 340, 90, 334, 96, 329, 93, 328);
         bezierCurve(g2, 79, 336, 84, 339, 89, 326, 93, 328);
         bezierCurve(g2, 79, 336, 68, 324, 53, 318, 39, 334);
@@ -350,6 +353,7 @@ public class Assignment1_64050285_64050543 extends JPanel {
         bezierCurve(g2, 78, 360, 82, 367, 77, 375, 83, 374);
         bf = floodfill(bf, 80, 360, Color.decode("#b69b90"));
 
+        // cut right foot
         bezierCurve(g2, 156, 418, 159, 421, 152, 427, 152, 435);
         bezierCurve(g2, 156, 418, 152, 416, 149, 433, 143, 438);
         bezierCurve(g2, 136, 457, 134, 445, 141, 448, 143, 438);
@@ -393,6 +397,7 @@ public class Assignment1_64050285_64050543 extends JPanel {
         bezierCurve(g2, 259, 434, 249, 441, 251, 456, 263, 437);
         bf = floodfill(bf, 263, 431, Color.decode("#b69b90"));
 
+        // cut right hand
         bezierCurve(g2, 319, 409, 296, 396, 318, 394, 323, 408);
         bezierCurve(g2, 319, 409, 333, 424, 344, 412, 323, 408);
         bf = floodfill(bf, 326, 411, Color.decode("#b69b90"));
@@ -458,7 +463,7 @@ public class Assignment1_64050285_64050543 extends JPanel {
         bezierCurve(g2, 256, 255, 228, 228, 257, 273, 277, 266);
         size = 1;
 
-        // cut right hand line
+        // cut left hand line
         g2.setColor(Color.decode("#b69b90"));
         bezierCurve(g2, 107, 326, 110, 323, 114, 328, 111, 330);
         bezierCurve(g2, 107, 326, 105, 330, 108, 334, 111, 330);
@@ -519,7 +524,7 @@ public class Assignment1_64050285_64050543 extends JPanel {
         flower(g2, bf, 50, 148, Color.decode("#f8cdc6"));
         flower(g2, bf, 20, 163, Color.decode("#f6dfd7"));
 
-        // bow color
+        // top bow color
         g2.setColor(Color.decode("#fdbaaa"));
         bezierCurve(g2, 161, 275, 164, 289, 186, 315, 202, 325);
         bezierCurve(g2, 208, 321, 208, 321, 207, 326, 202, 325);
@@ -541,6 +546,7 @@ public class Assignment1_64050285_64050543 extends JPanel {
         bresenhamsLine(g2, 245, 423, 238, 472);
         bf = floodfill(bf, 182, 321, Color.decode("#fdbaaa"));
 
+        // bottm bow color
         g2.setColor(Color.decode("#f8a99a"));
         bezierCurve(g2, 342, 431, 342, 431, 319, 419, 307, 415);
         bezierCurve(g2, 342, 431, 342, 431, 399, 438, 408, 446);
@@ -560,7 +566,7 @@ public class Assignment1_64050285_64050543 extends JPanel {
         bf = floodfill(bf, 261, 464, Color.decode("#f8a99a"));
         bf = floodfill(bf, 320, 430, Color.decode("#f8a99a"));
 
-        // bow line
+        // cut bow line
         size = 4;
         g2.setColor(Color.decode("#eda28f"));
         bezierCurve(g2, 161, 275, 164, 289, 186, 315, 202, 325);
@@ -669,6 +675,14 @@ public class Assignment1_64050285_64050543 extends JPanel {
     }
 
     public BufferedImage floodfill(BufferedImage m, int x, int y, Color replacementColor) {
+        /*
+         * modify to replace color all space in line that covered by change if medthod
+         * change == to =! and selectColor to replacementColor
+         * because (of my lazy) we always set border area before paint color
+         * anf last code we have a problem we need to use floodfill many time
+         * for one ovject
+         */
+
         Graphics2D g2 = m.createGraphics();
         Queue<Point> q = new LinkedList<>();
 
@@ -745,6 +759,7 @@ public class Assignment1_64050285_64050543 extends JPanel {
     }
 
     void plot(Graphics g, int x, int y) {
+        /* modify by initialize size to global variable */
         g.fillRect(x, y, size, size);
     }
 }
